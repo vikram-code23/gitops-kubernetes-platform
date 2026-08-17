@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: gitops-web-app
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/vikram-code23/gitops-kubernetes-platform.git
+    targetRevision: main
+    path: k8s
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gitops-web
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=true
