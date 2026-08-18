@@ -22,3 +22,8 @@ spec:
           image: nginx:1.27
           ports:
             - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+            limits:
+              cpu: "500m"
