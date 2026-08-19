@@ -27,15 +27,3 @@ spec:
               cpu: "100m"
             limits:
               cpu: "500m"
-
-        - name: cpu-stress
-          image: busybox:1.36
-          command:
-            - /bin/sh
-            - -c
-            - "while true; do :; done"
-          resources:
-            requests:
-              cpu: "100m"
-            limits:
-              cpu: "500m"
