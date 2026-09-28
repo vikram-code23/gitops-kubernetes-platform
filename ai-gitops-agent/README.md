@@ -491,4 +491,25 @@ gitops-web-service
 
 Ready endpoints:
 3
+
 ```
+---
+## Project Screenshots
+
+### Argo CD Application
+
+![Argo CD Application](screenshots/argo-cd.png)
+
+### Kubernetes Cluster
+
+![Kubernetes Cluster](screenshots/kubernetes-pods.png)
+
+### Grafana Monitoring
+
+![Grafana HPA](screenshots/grafana-hpa.png)
+
+### AI Troubleshooting Agent
+
+![AI Agent](screenshots/ai-agent.png)
+![AI Agent](screenshots/ai-agent1.png)
+
