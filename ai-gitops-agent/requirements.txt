@@ -1,0 +1,2 @@
+google-genai==2.25.0
+kubernetes==36.0.3
